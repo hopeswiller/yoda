@@ -1,0 +1,25 @@
+{
+  "name": "bookshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "figlet": "^1.5.0",
+    "graphql": "^15.3.0",
+    "mongoose": "^5.9.27"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4" 
+  }
+}

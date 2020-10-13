@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        async function sendData(){
+            // var date = document.getElementById('date').value
+            // var mapid = document.getElementById('mapid').value
+            // var fundcode = document.getElementById('fundcode').value
+
+            var data = await document.getElementsByTagName('input')
+            console.log(data.date.value)
+            console.log(data.assetMapID.value)
+            console.log(data.fundCode.value)
+            
+        }   
+        
+    </script>
+</head>
+
+<body>
+    <h1>Enter Details</h1>
+    <form action="http://localhost:4000/h" method="POST">
+        <fieldset>
+            <label>Date  <%= user.person %> </label>
+            <%= data %>
+            <input type="date" name="date" id="date">
+            <br><br>
+            <label>Asset MapID</label>
+            <input type="text" name="assetMapID" id="mapid">
+            <br><br>
+            <label>FundCode</label>
+            <input type="text" name="fundCode" id="fundcode">
+            <br><br><hr>
+
+            <button  value="submit"  onclick="sendData()">
+                send
+            </button>
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
